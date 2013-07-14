@@ -1,4 +1,4 @@
 flexible_grid
 =============
 
-flexible Resisable sections 
+flexible Resisable sections

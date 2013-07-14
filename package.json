@@ -1,0 +1,43 @@
+{
+  "name": "flexible_grid",
+  "version": "0.0.1",
+  "description": "making a flexible resizable grid",
+  "main": "app.js",
+  "scripts": {
+    "test": "none"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "gzip-js": "*",
+    "matchdep": "*",
+    "grunt-open": "*",
+    "grunt-bower-hooks": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-compass": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yahyaKacem/flexible_grid.git"
+  },
+  "keywords": [
+    "flexible",
+    "grid"
+  ],
+  "author": {
+    "name": "Yahya Kacem",
+    "email": "fuj.tyoli@gmail.com"
+  },
+  "licenses": {
+    "type": "BSD"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "06d79c21b031dd268fb0a8802b30a7a5f21fb6a6",
+  "bugs": {
+    "url": "https://github.com/yahyaKacem/flexible_grid/issues"
+  }
+}
