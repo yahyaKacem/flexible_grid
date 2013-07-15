@@ -1,0 +1,24 @@
+.handle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  // border: 2.5px outset #aaa;
+  @include box-sizing(border-box);
+  background-color: $handleBgColor;
+  &.left {
+    bottom: 0;
+    cursor: ew-resize;
+    width: $handleHeight;
+  }
+  &.bottom {
+    left: 0;
+    cursor: ns-resize;
+    height: $handleHeight;
+  }
+  &.moving {
+    background-color: $handleMovingColor;
+  }
+  &.constrained {
+    background-color: $handleConstrainedBgColor;
+  }
+}

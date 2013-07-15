@@ -1,0 +1,24 @@
+.border{
+  position: absolute;
+  overflow: hidden;
+  @include box-sizing(border-box);
+  &.left{
+    top: $header-height;
+    bottom: $footer-height;
+    left: 0;
+    background: $border-left-bg-color;
+    width: $left-width;
+    z-index: $top;
+    padding-right: $handleHeight;
+  }
+  &.bottom{
+    left: 0;
+    right: 0;
+    bottom: $footer-height;
+    height: $border-bottom-default-height;
+    color: $main-color;
+    background: $border-bottom-bg-color;
+    padding-left: $main-side-padding;
+    padding-top: $handleHeight;
+  }
+}

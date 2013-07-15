@@ -1,0 +1,13 @@
+.main {
+  position     : absolute;
+  right        : 0;
+  top          : $header-height;
+  bottom       : $footer-height + $border-bottom-default-height;
+  left         : 0;
+  background   : $main-bg-color;
+  padding-left : $main-side-padding;
+  padding-right: $main-side-padding;
+  color        : $main-color;
+  overflow     : hidden;
+  @include box-sizing(border-box);
+}

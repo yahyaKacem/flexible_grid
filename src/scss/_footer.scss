@@ -1,0 +1,8 @@
+footer#footer {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: $footer-width;
+  height: $footer-height;
+  background: $footer-bg-color;
+}

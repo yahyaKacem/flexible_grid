@@ -25,21 +25,19 @@
 </head>
 <body ng-controller="MainCtrl">
   <div id="wrapper">
-    <header id="header"></header>
-    <section class="container well">
-      <border>
-        left
-        <handle></handle>
-      </border>
-      <main>
-        Main
-      </main>
-      <border>
-        <handle></handle>
+    <header id="header" class="clearfix">Header</header>
+    <border class="left">
+      left
+      <handle class="left" max="300" min="0" type="free"></handle>
+    </border>
+    <flexible-grid>
+      <main>Main</main>
+      <border class="bottom">
+        <handle class="bottom"></handle>
         Notes
       </border>
-    </section>
-    <footer id="footer"></footer>
+    </flexible-grid>
+    <footer id="footer" class="clearfix">Footer</footer>
   </div>
   <script src=".tmp/js/libs.js"></script>
   <script src=".tmp/js/components.js"></script>

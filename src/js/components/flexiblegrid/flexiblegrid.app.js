@@ -2,13 +2,13 @@
 var flexibleGridApp = angular.module('flexibleGrid', []);
 //########################################################################
 //######injecting the dependencies########################################
-flexibleGridDirecitves.main.$inject = ['tplsUrl'];
-flexibleGridDirecitves.border.$inject = ['tplsUrl'];
-flexibleGridDirecitves.handle.$inject = ['tplsUrl'];
-flexibleGridDirecitves.flexibleGrid.$inject = ['tplsUrl'];
+flexibleGridDirectives.main.$inject = ['tplsUrl'];
+flexibleGridDirectives.border.$inject = ['tplsUrl'];
+flexibleGridDirectives.handle.$inject = ['tplsUrl', '$window'];
+flexibleGridDirectives.flexibleGrid.$inject = ['tplsUrl'];
 //########################################################################
 //####assigning the controllers and the directives to the application#####
 flexibleGridApp.controller(flexibleGridControllers);
-flexibleGridApp.directive(flexibleGridDirecitves);
+flexibleGridApp.directive(flexibleGridDirectives);
 //########################################################################
-angular.value('tplsUrl', '.tmp/tpls/');
+flexibleGridApp.value('tplsUrl', '.tmp/tpls/');
