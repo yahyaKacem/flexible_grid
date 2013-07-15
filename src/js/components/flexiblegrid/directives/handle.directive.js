@@ -3,9 +3,6 @@
 flexibleGridDirectives.handle = function(tplsUrl, $window){
   var linker = function(iScope, iElement, iAttrs){
     var __slice  = [].slice;
-    var options = {
-      borderMin: 0
-    };
     var throttle = function(delay, fn) {
       var throttled = false;
       return function() {
@@ -22,20 +19,17 @@ flexibleGridDirectives.handle = function(tplsUrl, $window){
     iScope.trackMove = function($event) {
       $event.preventDefault();
       var target    = iElement.parent();
-      var borderMin = iAttrs.min || 0;
       var classes   = iElement[0].className.split(' ');
       for(i = 0; i < classes.length; i++){
         if(classes[i] === 'bottom' || classes[i] === 'top'){
           var handle      = 8;
           var coord       = "pageY";
           var offset      = "offsetY"; // make the options module
-          var borderMax   = iAttrs.max || iElement.parent().parent().height();
           var initialSize = iElement.parent().height();
         }else if(classes[i] === 'left' || classes[i] === 'right'){
           var handle      = 0;
           var coord       = "pageX";
           var offset      = "offsetX";
-          var borderMax   = iAttrs.max || iElement.parent().parent().width();
           var initialSize = iElement.parent().width();
         }
         if(classes[i] === 'top' || classes[i] === 'left'){
@@ -54,7 +48,7 @@ flexibleGridDirectives.handle = function(tplsUrl, $window){
         return iScope.$apply(function() {
           if(iAttrs.type === "free"){
             var boundries = {
-              max: parseInt(iAttrs.max) || $window.outerWidth,
+              max: parseInt(iAttrs.max) - 8 || $window.outerWidth,
               min: parseInt(iAttrs.min) || 0
             };
           }else{
