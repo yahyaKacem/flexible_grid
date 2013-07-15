@@ -1,4 +1,5 @@
 flexible_grid
 =============
 
-flexible Resisable sections
+Flexible Resisable sections
+Example could be found in the src/index.html file.
