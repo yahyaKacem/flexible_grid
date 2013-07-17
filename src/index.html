@@ -26,17 +26,7 @@
 <body ng-controller="MainCtrl">
   <div id="wrapper">
     <header id="header" class="clearfix">Header</header>
-    <border class="left">
-      left
-      <handle class="left" max="300" min="0" type="free"></handle>
-    </border>
-    <flexible-grid>
-      <main>Main</main>
-      <border class="bottom">
-        <handle class="bottom"></handle>
-        Notes
-      </border>
-    </flexible-grid>
+    <section ng-include="'tpls/content.tpl.html'"></section>
     <footer id="footer" class="clearfix">Footer</footer>
   </div>
   <script src=".tmp/js/libs.js"></script>
